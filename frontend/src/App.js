@@ -1,10 +1,10 @@
 import React from 'react'
-import Signin from './Login/signin'
+import {Welcome, Admin, Employee} from './Login/signin'
 const App = () => {
 
   return (
     <div>
-      <Signin />
+      <Welcome />
     </div>
   )
 }
