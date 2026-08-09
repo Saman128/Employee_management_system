@@ -1,10 +1,11 @@
 import React from 'react'
-import {Welcome, Admin, Employee} from './Login/signin'
+import Signup from './Login/signup';
 const App = () => {
 
   return (
     <div>
-      <Welcome />
+      <Signup />
+      {/* is ko un comment kar k daikh sakti ho phir comment kar dyna */}
     </div>
   )
 }
