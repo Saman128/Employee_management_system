@@ -1,8 +1,12 @@
-import React from 'react'
-import Signup from './Login/signup';
-const App = () => {
 
+import React from 'react';
+import './App.css';
+import Signup from "./Login/signup";
+import './Login/style.css';
+
+const App = () => {
   return (
+
     <div>
       <Signup />
       {/* is ko un comment kar k daikh sakti ho phir comment kar dyna */}
@@ -10,4 +14,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
