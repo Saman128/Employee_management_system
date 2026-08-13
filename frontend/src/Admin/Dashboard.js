@@ -6,57 +6,10 @@ import { FaRegFileAlt, FaRegCalendar } from "react-icons/fa";
 import { CiSettings } from "react-icons/ci";
 import { TbCurrencyDollar } from "react-icons/tb";
 import { IoIosLogOut } from "react-icons/io";
-// import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 
-const Dashboard = () => {
-    const DashboardDisplay = () => {
-        return (<>
-            <div className='dashboard-heading'>
-                <h1>Dashboard</h1>
-                <p>Welcome back, Admin — here's your overview</p>
-            </div>
-            <div className='dashboard-cards'>
-                <div className='card1'>
-                    <div className='card-h'>
-                        <h2>Total Employees</h2>
-                        <h1>5</h1>
-                    </div>
-                    <div className='card-icon'>
-                        <h1><FiUsers /></h1>
-                    </div>
-                </div>
-                <div className='card1'>
-                    <div className='card-h'>
-                        <h2>Departments</h2>
-                        <h1>5</h1>
-                    </div>
-                    <div className='card-icon'>
-                        <h1><LuBuilding2 /></h1>
-                    </div>
-                </div>
-                <div className='card1'>
-                    <div className='card-h'>
-                        <h2>Today's Attendance</h2>
-                        <h1>5</h1>
-                    </div>
-                    <div className='card-icon'>
-                        <h1><FaRegCalendar /></h1>
-                    </div>
-                </div>
-                <div className='card1'>
-                    <div className='card-h'>
-                        <h2>Pending Leaves</h2>
-                        <h1>5</h1>
-                    </div>
-                    <div className='card-icon'>
-                        <h1><FaRegFileAlt /></h1>
-                    </div>
-                </div>
-            </div>
-        </>
-        )
-    };
+const Dashboard = (props) => {
     return (
         <div className='main-container'>
             <div className='left-container'>
@@ -79,11 +32,11 @@ const Dashboard = () => {
                 <h3 className='nav-heading'>NAVIGATION</h3>
                 <div className='nav'>
                     <ul>
-                        <li><LuLayoutDashboard className='icons' />Dashboard</li>
-                        <li><FiUser className='icons' />Employees</li>
-                        <li><FaRegFileAlt className='icons' />Leave</li>
-                        <li><TbCurrencyDollar className='icons' />Payslips</li>
-                        <li><CiSettings className='icons' />Settings</li>
+                        <Link to={"/"} className='Link'> <li><LuLayoutDashboard className='icons' />Dashboard</li></Link>
+                        <Link to={"/employee"} className='Link'>  <li><FiUser className='icons' />Employees</li></Link>
+                        <Link to={"/leave"} className='Link'>   <li><FaRegFileAlt className='icons' />Leave</li></Link>
+                        <Link to={"/payslips"} className='Link'>  <li><TbCurrencyDollar className='icons' />Payslips</li></Link>
+                        <Link to={"/setting"} className='Link'> <li><CiSettings className='icons' />Settings</li></Link>
                     </ul>
                 </div>
                 <div className=' logout'>
@@ -93,11 +46,59 @@ const Dashboard = () => {
                 </div>
             </div>
             <div className='right-container'>
-                <DashboardDisplay />
+                <Outlet />
             </div>
 
         </div>
     )
-}
+};
+const DashboardDisplay = () => {
+    return (<>
 
-export default Dashboard
+        <div className='dashboard-heading'>
+            <h1>Dashboard</h1>
+            <p>Welcome back, Admin — here's your overview</p>
+        </div>
+        <div className='dashboard-cards'>
+            <div className='card1'>
+                <div className='card-h'>
+                    <h2>Total Employees</h2>
+                    <h1>5</h1>
+                </div>
+                <div className='card-icon'>
+                    <h1><FiUsers /></h1>
+                </div>
+            </div>
+            <div className='card1'>
+                <div className='card-h'>
+                    <h2>Departments</h2>
+                    <h1>5</h1>
+                </div>
+                <div className='card-icon'>
+                    <h1><LuBuilding2 /></h1>
+                </div>
+            </div>
+            <div className='card1'>
+                <div className='card-h'>
+                    <h2>Today's Attendance</h2>
+                    <h1>5</h1>
+                </div>
+                <div className='card-icon'>
+                    <h1><FaRegCalendar /></h1>
+                </div>
+            </div>
+            <div className='card1'>
+                <div className='card-h'>
+                    <h2>Pending Leaves</h2>
+                    <h1>5</h1>
+                </div>
+                <div className='card-icon'>
+                    <h1><FaRegFileAlt /></h1>
+                </div>
+            </div>
+        </div>
+    </>
+    )
+};
+
+export { Dashboard, DashboardDisplay };

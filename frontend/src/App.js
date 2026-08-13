@@ -1,18 +1,34 @@
-
-import React from 'react';
 import './App.css';
-// import Signup from "./Login/signup";
-import Dashboard from './Admin/Dashboard';
 import './Login/style.css';
 
-const App = () => {
-  return (
+import { Dashboard, DashboardDisplay } from './Admin/Dashboard';
+import Employee from './Admin/Employee';
+import Leave from './Admin/Leave';
+import Payslips from './Admin/Payslips';
+import Setting from './Admin/Setting';
 
-    <div>
-      {/* <Signup /> */}
-      <Dashboard />
-    </div>
-  )
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+function App() {
+  return (
+    <BrowserRouter>
+
+      <Routes>
+
+        <Route path="/" element={<Dashboard />}>
+
+          <Route index element={<DashboardDisplay />} />
+          <Route path="employee" element={<Employee />} />
+          <Route path="leave" element={<Leave />} />
+          <Route path="payslips" element={<Payslips />} />
+          <Route path="setting" element={<Setting />} />
+
+        </Route>
+
+      </Routes>
+
+    </BrowserRouter>
+  );
 }
 
 export default App;

@@ -19,6 +19,8 @@
 
 .right-container {
     width: 85%;
+    padding: 3rem 5rem;
+    background-color: #f3f2f2;
 }
 
 .left-container {
@@ -86,6 +88,7 @@
     height: 68vh;
     margin-top: 1rem;
     color: var(--primary-text-color);
+
 }
 
 .nav ul {
@@ -150,11 +153,16 @@ li.active::before {
     color: #f23c3c9c;
 }
 
-/* ####### dashboard ######## */
-.right-container {
-    padding: 3rem 5rem;
-    background-color: #f3f2f2;
+.Link {
+    text-decoration: none;
 }
+
+.Link li {
+
+    color: var(--primary-text-color);
+}
+
+/* ####### dashboard ######## */
 
 .dashboard-heading h1 {
     font-size: 2rem;
