@@ -1,15 +1,16 @@
 
 import React from 'react';
 import './App.css';
-import Signup from "./Login/signup";
+// import Signup from "./Login/signup";
+import Dashboard from './Admin/Dashboard';
 import './Login/style.css';
 
 const App = () => {
   return (
 
     <div>
-      <Signup />
-      {/* is ko un comment kar k daikh sakti ho phir comment kar dyna */}
+      {/* <Signup /> */}
+      <Dashboard />
     </div>
   )
 }
