@@ -105,11 +105,11 @@ li {
     font-size: 1rem;
 }
 
-li.active {
+.Link.active li {
     background-color: #22227182;
 }
 
-li.active::before {
+.Link.active li::before {
     content: "";
     position: absolute;
     left: 0;
@@ -125,9 +125,7 @@ li.active::before {
     width: 1.3rem;
     height: 1.3rem;
     color: var(--primary-text-color);
-    position: relative;
-    top: 50%;
-    transform: translateY(20%);
+    vertical-align: middle;
 }
 
 .logout {

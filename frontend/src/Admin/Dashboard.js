@@ -6,7 +6,7 @@ import { FaRegFileAlt, FaRegCalendar } from "react-icons/fa";
 import { CiSettings } from "react-icons/ci";
 import { TbCurrencyDollar } from "react-icons/tb";
 import { IoIosLogOut } from "react-icons/io";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 
 const Dashboard = (props) => {
@@ -32,11 +32,11 @@ const Dashboard = (props) => {
                 <h3 className='nav-heading'>NAVIGATION</h3>
                 <div className='nav'>
                     <ul>
-                        <Link to={"/"} className='Link'> <li><LuLayoutDashboard className='icons' />Dashboard</li></Link>
-                        <Link to={"/employee"} className='Link'>  <li><FiUser className='icons' />Employees</li></Link>
-                        <Link to={"/leave"} className='Link'>   <li><FaRegFileAlt className='icons' />Leave</li></Link>
-                        <Link to={"/payslips"} className='Link'>  <li><TbCurrencyDollar className='icons' />Payslips</li></Link>
-                        <Link to={"/setting"} className='Link'> <li><CiSettings className='icons' />Settings</li></Link>
+                        <NavLink to={"/"} className='Link'> <li><LuLayoutDashboard className='icons' />Dashboard</li></NavLink>
+                        <NavLink to={"/employee"} className='Link'>  <li><FiUser className='icons' />Employees</li></NavLink>
+                        <NavLink to={"/leave"} className='Link'>   <li><FaRegFileAlt className='icons' />Leave</li></NavLink>
+                        <NavLink to={"/payslips"} className='Link'>  <li><TbCurrencyDollar className='icons' />Payslips</li></NavLink>
+                        <NavLink to={"/setting"} className='Link'> <li><CiSettings className='icons' />Settings</li></NavLink>
                     </ul>
                 </div>
                 <div className=' logout'>

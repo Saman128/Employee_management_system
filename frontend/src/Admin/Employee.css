@@ -1,0 +1,191 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --primery-sidebar-bg-color: #0D162A;
+    --primary--p-color: #566380;
+    --primary--border-color: #2c3446;
+    --primary-text-color: #cad2da;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-emp h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.heading-emp p {
+    font-size: 1rem;
+    color: var(--primary--p-color);
+}
+
+.emp-btn {
+    background-color: #0808b2;
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.emp-btn:hover {
+    background-color: #1c1cdb;
+}
+
+.f-icons {
+    font-size: 1rem;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 88%;
+    height: 4vh;
+    background-color: #eeeeee;
+    border-radius: 6px;
+    padding: 0 10px;
+    border: 1px solid #bfbfbf;
+}
+
+.search-box:hover {
+    box-shadow: 0px 0px 3px blue;
+}
+
+.search-icon {
+    flex-shrink: 0;
+    font-size: 1.2rem;
+    color: #566380;
+    margin-right: 8px;
+}
+
+.search-box input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    font-size: 14px;
+    color: #7f7f7f;
+}
+
+.selector {
+    width: 11%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #bfbfbf;
+    border-radius: 0.5rem;
+    background-color: #eeeeee;
+    outline: none;
+}
+
+.selector:hover {
+    box-shadow: 0px 0px 3px blue;
+}
+
+.employee-data {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.card {
+    position: relative;
+    display: inline;
+    border: 1px solid #bfbfbf;
+    width: 24%;
+    height: 38vh;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 1rem;
+
+    background: linear-gradient(to top, #6d6cbd, #554ea43b, #4e57a400);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.card:hover .card-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-overlay svg {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.card .card-img {
+    height: 29vh;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card-img .img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card .card-heading {
+    padding: 1rem 1rem;
+    height: 8.8vh;
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-color: #fefbfb;
+
+}
+
+.card-heading h3 {
+    font-size: 1rem;
+    color: #676666;
+}
+
+.card-heading p {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    color: var(--primary--p-color);
+}
+
+.overlay-icon {
+    margin-bottom: 2.5rem;
+    border: 1px solid #bab9b9;
+    width: 10%;
+    height: 4vh;
+    padding: 0rem 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.edit:hover {
+    color: #3737a5;
+}
+
+.delete:hover {
+    color: rgb(221, 72, 72);
+}
