@@ -7,9 +7,9 @@ import { CiSettings } from "react-icons/ci";
 import { TbCurrencyDollar } from "react-icons/tb";
 import { IoIosLogOut } from "react-icons/io";
 import { NavLink, Outlet } from "react-router-dom";
+import Popup from './Popup';
 
-
-const Dashboard = (props) => {
+const Dashboard = ({ showPopup, setShowPopup }) => {
     return (
         <div className='main-container'>
             <div className='left-container'>
@@ -48,7 +48,7 @@ const Dashboard = (props) => {
             <div className='right-container'>
                 <Outlet />
             </div>
-
+            {showPopup && <Popup onClose={() => setShowPopup(false)} />}
         </div>
     )
 };

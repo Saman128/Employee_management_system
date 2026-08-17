@@ -11,6 +11,11 @@
     --primary-text-color: #cad2da;
 }
 
+.main {
+    position: relative;
+
+}
+
 .heading {
     display: flex;
     justify-content: space-between;
@@ -189,3 +194,5 @@
 .delete:hover {
     color: rgb(221, 72, 72);
 }
+
+/* ###### POPUP ############## */

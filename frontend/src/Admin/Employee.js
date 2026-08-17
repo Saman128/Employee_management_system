@@ -1,10 +1,12 @@
-import React from 'react'
+
 import "./Employee.css";
 import { FiPlus } from "react-icons/fi";
 import { IoSearchSharp } from "react-icons/io5";
 import { MdOutlineEdit } from "react-icons/md";
 import { RiDeleteBinLine } from "react-icons/ri";
-const Employee = () => {
+
+const Employee = ({ onOpenPopup }) => {
+
     return (
         <div>
             <div className='heading'>
@@ -13,7 +15,7 @@ const Employee = () => {
                     <p>Manage your team members</p>
                 </div>
                 <div className='add-emp'>
-                    <button className='emp-btn'><FiPlus className='f-icons' /> Add Employee</button>
+                    <button onClick={onOpenPopup} className='emp-btn' ><FiPlus className='f-icons' /> Add Employee</button>
                 </div>
             </div>
 

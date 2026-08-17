@@ -1,0 +1,56 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --primery-sidebar-bg-color: #0D162A;
+    --primary--p-color: #566380;
+    --primary--border-color: #2c3446;
+    --primary-text-color: #cad2da;
+}
+
+.popup {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.355);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+
+}
+
+.popup-card {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    width: 40%;
+    background-color: white;
+    padding: 2rem 2rem;
+}
+
+.popup-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup-heading h1 {
+    font-size: 1.5rem;
+}
+
+.popup-heading p {
+    font-size: 1rem;
+    color: var(--primary--p-color);
+    margin-top: 0.5rem;
+}
+
+.close-icon {
+    font-size: 1.5rem;
+    color: var(--primary--p-color);
+    cursor: pointer;
+}
