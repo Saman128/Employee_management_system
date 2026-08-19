@@ -7,17 +7,21 @@ import Leave from './Admin/Leave';
 import Payslips from './Admin/Payslips';
 import Setting from './Admin/Setting';
 import { useState } from 'react';
-
+import { Welcome, Admin, Employe } from './Login/signin';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import Signup from './Login/signup';
 function App() {
   const [showPopup, setShowPopup] = useState(false);
   return (
     <BrowserRouter>
 
       <Routes>
-
-        <Route path="/" element={<Dashboard showPopup={showPopup}
+        <Route path="/" element={<Signup />} >
+          <Route index element={<Welcome />} />
+          <Route path="admin" element={<Admin />} />
+          <Route path="employe" element={<Employe />} />
+        </Route>
+        <Route path="dashboard" element={<Dashboard showPopup={showPopup}
           setShowPopup={setShowPopup} />}>
 
           <Route index element={<DashboardDisplay />} />

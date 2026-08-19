@@ -32,11 +32,11 @@ const Dashboard = ({ showPopup, setShowPopup }) => {
                 <h3 className='nav-heading'>NAVIGATION</h3>
                 <div className='nav'>
                     <ul>
-                        <NavLink to={"/"} className='Link'> <li><LuLayoutDashboard className='icons' />Dashboard</li></NavLink>
-                        <NavLink to={"/employee"} className='Link'>  <li><FiUser className='icons' />Employees</li></NavLink>
-                        <NavLink to={"/leave"} className='Link'>   <li><FaRegFileAlt className='icons' />Leave</li></NavLink>
-                        <NavLink to={"/payslips"} className='Link'>  <li><TbCurrencyDollar className='icons' />Payslips</li></NavLink>
-                        <NavLink to={"/setting"} className='Link'> <li><CiSettings className='icons' />Settings</li></NavLink>
+                        <NavLink to={"/dashboard"} className='Link'> <li><LuLayoutDashboard className='icons' />Dashboard</li></NavLink>
+                        <NavLink to={"/dashboard/employee"} className='Link'>  <li><FiUser className='icons' />Employees</li></NavLink>
+                        <NavLink to={"/dashboard/leave"} className='Link'>   <li><FaRegFileAlt className='icons' />Leave</li></NavLink>
+                        <NavLink to={"/dashboard/payslips"} className='Link'>  <li><TbCurrencyDollar className='icons' />Payslips</li></NavLink>
+                        <NavLink to={"/dashboard/setting"} className='Link'> <li><CiSettings className='icons' />Settings</li></NavLink>
                     </ul>
                 </div>
                 <div className=' logout'>

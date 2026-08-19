@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+
 const Welcome = () => {
     return (
         <div className='right-side'>
@@ -8,7 +9,7 @@ const Welcome = () => {
                 <h2>Welcome Back</h2>
                 <p className='p1'>Select your portal to securely access the system.</p>
                 <Link to={"/admin"} className='Link'>  <button className='btn'>Admin portal <FaArrowRight className='icon' /></button></Link><br></br>
-                <Link to={"/employee"} className='Link'> <button className='btn'>Employee portal <FaArrowRight className='icon' /></button></Link>
+                <Link to={"/employe"} className='Link'> <button className='btn'>Employee portal <FaArrowRight className='icon' /></button></Link>
                 <p className='p2'>© 2026 GreatStack. All rights reserved.</p>
             </div>
         </div>
@@ -26,14 +27,14 @@ const Admin = () => {
                     <input type='text' /><br></br>
                     <label>Password</label><br></br>
                     <input type='password' /><br></br>
-                    <button className='btn1'>Sign in</button>
+                    <Link to={"/dashboard"}>  <button className='btn1'>Sign in</button></Link>
                 </form>
 
             </div>
         </div>
     )
 }
-const Employee = () => {
+const Employe = () => {
     return (
         <div className='right-side'>
             <div className='data'>
@@ -53,4 +54,4 @@ const Employee = () => {
     )
 }
 
-export { Welcome, Admin, Employee };
+export { Welcome, Admin, Employe };
