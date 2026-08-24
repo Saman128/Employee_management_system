@@ -40,7 +40,7 @@ const Popup = ({ onClose }) => {
                     <div className='input-container'>
                         <div className='label-input'>
                             <label>Department</label><br></br>
-                            <select className='selector department-input'>
+                            <select className='select department-input'>
                                 <option value="">Select Departments</option>
                                 <option value="hr">HR</option>
                                 <option value="engineering">Engineering</option>
@@ -80,8 +80,8 @@ const Popup = ({ onClose }) => {
                             <input type='password' className='input'></input>
                         </div>
                         <div className='label-input'>
-                            <label>System Role</label>
-                            <select className='selector department-input'>
+                            <label>System Role</label><br></br>
+                            <select className='select department-input'>
                                 <option value="">Employee</option>
                                 <option value="Admin">Admin</option>
                             </select>
@@ -93,7 +93,7 @@ const Popup = ({ onClose }) => {
                     <button className='emp-button create'> Create Employee</button>
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 

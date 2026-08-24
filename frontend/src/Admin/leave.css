@@ -45,3 +45,22 @@ tr:hover {
 tr th {
     background-color: white;
 }
+
+
+/* ######### payslip   ######## */
+.download {
+    padding: 0.6rem 1rem;
+    background-color: #d0dbf2c0;
+    color: #0355f9;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.download:hover {
+    background-color: #bfd1f5c0;
+}
+
+.download-icon {
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}

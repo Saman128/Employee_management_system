@@ -12,6 +12,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from './Login/signup';
 function App() {
   const [showPopup, setShowPopup] = useState(false);
+  const [slippopup, setSlipPopup] = useState(false);
+  const [passpopup, setpassPopup] = useState(false);
   return (
     <BrowserRouter>
 
@@ -22,13 +24,17 @@ function App() {
           <Route path="employe" element={<Employe />} />
         </Route>
         <Route path="dashboard" element={<Dashboard showPopup={showPopup}
-          setShowPopup={setShowPopup} />}>
+          setShowPopup={setShowPopup}
+          slippopup={slippopup}
+          setSlipPopup={setSlipPopup}
+          passpopup={passpopup}
+          setpassPopup={setpassPopup} />}>
 
           <Route index element={<DashboardDisplay />} />
           <Route path="employee" element={<Employee onOpenPopup={() => setShowPopup(true)} />} />
           <Route path="leave" element={<Leave />} />
-          <Route path="payslips" element={<Payslips />} />
-          <Route path="setting" element={<Setting />} />
+          <Route path="payslips" element={<Payslips slipOpenPopup={() => setSlipPopup(true)} />} />
+          <Route path="setting" element={<Setting passOpenPopup={() => setpassPopup(true)} />} />
 
         </Route>
 

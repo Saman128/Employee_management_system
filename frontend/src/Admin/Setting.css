@@ -1,0 +1,89 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+:root {
+
+    --primary--p-color: #566380;
+    --primary-text-color: #cad2da;
+}
+
+.p {
+    font-size: 1rem;
+    color: var(--primary--p-color);
+    margin-top: 0.5rem;
+}
+
+.p1 {
+    color: var(--primary--p-color);
+    font-size: 0.8rem;
+}
+
+.setting-cards {
+    width: 100%;
+}
+
+.settings {
+    border: none;
+    margin: -1rem;
+}
+
+.ic {
+    margin-right: 0.2rem;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.chnage-password {
+    background-color: white;
+    padding: 1.4rem;
+    width: 30%;
+    border-radius: 0.5rem;
+}
+
+.change-heading1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.change-heading {
+    display: flex;
+    align-items: center;
+}
+
+.bag {
+    background-color: rgb(228, 227, 227);
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.bag-ic {
+    font-size: 1.3rem;
+    color: #5e5c5c;
+}
+
+.heading-change {
+    font-size: 1rem;
+}
+
+.p-change {
+    color: var(--primary--p-color);
+    font-size: 0.9rem;
+}
+
+.change-btn1 {
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    background-color: #efefef;
+    padding: 0.8rem 1rem;
+    border: 1px solid #e7e7e7;
+}
+
+.change-btn1:hover {
+    background-color: #dedede;
+}

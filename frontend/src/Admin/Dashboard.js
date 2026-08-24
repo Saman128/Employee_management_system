@@ -8,8 +8,17 @@ import { TbCurrencyDollar } from "react-icons/tb";
 import { IoIosLogOut } from "react-icons/io";
 import { NavLink, Outlet } from "react-router-dom";
 import Popup from './Popup';
+import Payslippopup from './Payslippopup';
+import Changepassword from './Changepassword';
 
-const Dashboard = ({ showPopup, setShowPopup }) => {
+const Dashboard = ({
+    showPopup,
+    setShowPopup,
+    slippopup,
+    setSlipPopup,
+    passpopup,
+    setpassPopup
+}) => {
     return (
         <div className='main-container'>
             <div className='left-container'>
@@ -48,7 +57,16 @@ const Dashboard = ({ showPopup, setShowPopup }) => {
             <div className='right-container'>
                 <Outlet />
             </div>
-            {showPopup && <Popup onClose={() => setShowPopup(false)} />}
+            {showPopup && (
+                <Popup onClose={() => setShowPopup(false)} />
+            )}
+
+            {slippopup && (
+                <Payslippopup onClose={() => setSlipPopup(false)} />
+            )}
+            {passpopup && (
+                <Changepassword onClose={() => setpassPopup(false)} />
+            )}
         </div>
     )
 };

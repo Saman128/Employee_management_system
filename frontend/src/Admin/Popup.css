@@ -115,6 +115,19 @@ label {
     outline: none;
 }
 
+.select {
+    width: 11%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #bfbfbf;
+    border-radius: 0.5rem;
+    background-color: #eeeeee;
+    outline: none;
+}
+
+.select:hover {
+    box-shadow: 0px 0px 3px blue;
+}
+
 .department-input {
     width: 100%;
     color: var(--primary--p-color);
@@ -153,4 +166,42 @@ label {
 
 .create:hover {
     background-color: #4343f0;
+}
+
+
+/* ########## payslippopup  ################## */
+
+
+.popup-card1 {
+    width: 30%;
+    height: 58vh;
+    margin-top: 22vh;
+}
+
+.popup-heading1 {
+    border: none;
+    width: 107%;
+    margin: -1rem;
+}
+
+.label-input1 {
+    width: 48.5%;
+}
+
+/* ########## changepassword  ################## */
+
+
+.popup-card2 {
+    width: 23%;
+    height: 35vh;
+    margin-top: 33vh;
+}
+
+.input2 {
+    margin-top: -0.5rem;
+}
+
+.bag-icon {
+    margin-right: 0.5rem;
+    vertical-align: middle;
 }
